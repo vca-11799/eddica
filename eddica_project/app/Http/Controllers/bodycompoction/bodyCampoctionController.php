@@ -9,9 +9,14 @@ class bodyCampoctionController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function bodyCompoction()
+    public function addbodyCompoction()
     {
-        return view('bodycompoction.body-compoction-index');
+        return view('bodycompoction.body-compoction-add');
+    }
+
+    public function bodyCompoctionMaster()
+    {
+        return view('bodycompoction.bodycompoctionMaster');
     }
 
     /**
@@ -23,7 +28,7 @@ class bodyCampoctionController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created resource in storage. 
      */
     public function store(Request $request)
     {
